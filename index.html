@@ -1,106 +1,190 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cachureos Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilo.css">
-  </head>
-  <body>
-    <header class="container text-center">
-      <div class="row">
-        <div class="col">
-          <img id="logo" class="img-fluid" src="./img/logo.svg" alt="Logo Cachureos">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cachureando Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+</head>
+
+<body>
+
+  <header class="container text-center d-none d-md-block">
+    <div class="row">
+      <div class="col">
+        <img id="logo" class="img-fluid" src="./img/logo.svg" width="200" alt="Logo Cachureos">
+      </div>
+    </div>
+  </header>
+
+
+
+  <nav class="navbar navbar-expand-md" role="navigation">
+
+    <div class="container">
+
+      <a class="navbar-brand d-md-none" href="./index.html">
+        <img id="logo-collapsed" src="./img/logo-collapsed.svg" alt="Logo Pequeño" width="30"> Cachureando
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menucollapse"
+        aria-controls="menucollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="menucollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#quienesomos">Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./formulario.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <main>
+    <section id="quienesomos">
+      <div class="container">
+        <div class="row px-5 py-5 px-md-0 text-center">
+          <div class="col col-md-8 col-xl-6 mx-auto">
+            <img class="main-img img-fluid" src="./img/somos.svg" alt="Imagen de Somos">
+            <h2>Quiénes Somos</h2>
+            <p>Somos una empresa dedicada a la venta de productos con estilo,
+              conformado por un equipo de jóvenes con ganas de entregar
+              productos únicos e impresionantes para quienes busquen algo
+              irrepetible y personalizado</p>
+          </div>
+
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="quienesomos" class="grapper">
-        <div class="container">
-          <div class="row px-5 py-5 text-center">
-            <img src="" alt="">
-            <h2>Quienes Somos</h2>
-            <p>Somos una empresa dedicada a la venta de productos,
-            conformado por un equipo de jovenes con ganas de entregar
-            productos unicos e impresionantes para quienes busquen algo
-            irrepetible y propio!</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="envios" class="grapper">
-        <div class="container">
-          <div class="row px-5 py-5 text-center">
-            <img src="" alt="">
-            <h2>Envios</h2>
-            <p>Nuestros envios son realizados a traves de Chilexpress y
+    <section id="envios">
+      <div class="container">
+        <div class="row px-5 py-5 px-md-0 text-center">
+          <div class="col col-md-8 col-xl-6 mx-auto">
+            <img class="main-img img-fluid" src="./img/envios.svg" alt="Imagen de Somos">
+            <h2>Envíos</h2>
+            <p>Nuestros envíos son realizados a través de Chilexpress y
               Starken, empaquetados firmemente para que tus productos
               lleguen intactos y seguros a tu hogar. Puedes realizar
-              seguimientos para cada uno de tus envios</p>
+              seguimientos para cada uno de tus envíos utilizando el código que te enviaremos a tu correo electrónico
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="container">
+      <div class="row py-5 text-center">
+
+        <!-- columna texto -->
+        <div class="col-12 col-xl-4">
+          <div class="row px-5 px-md-0 text-xl-start">
+            <h2>Catálogo</h2>
+            <p>Echa un vistazo a nuestros productos principales, elaborados utilizando procesos sustentables y manuales,
+              con materiales de alta calidad que garantizan duración, excelencia. Con estilos que no encontrarás en
+              otras tiendas. Si deseas personalizar tus productos, no dudes en contactarnos.</p>
           </div>
         </div>
-      </section>
-      
-
-      <section id="galería" class="container">
-        <div class="row">
-
-          <!-- columna texto -->
-          <div class="col-12 col-md-6">
-                <div class="row px-5 py-5">
-                  <h2>Galeria de Imagenes</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aspernatur similique aut voluptates! Ipsa, quaerat minus assumenda quod expedita nisi inventore atque nesciunt minima laudantium ducimus voluptatem voluptas enim tenetur!</p>
-                </div>
-          </div> 
 
         <!-- columna fotos -->
-          <div id="fondo" class="col-12 col-md-6 order-md-first"> 
-              <div class="row">
-                <div class="col-6 px-1 py-1">
-                  <img src="./images/foto02.jpeg" class="img-fluid" alt="Producto02" >
-                </div>
-                <div class="col-6 px-1 py-1">
-                  <img src="./images/foto02.jpeg" class="img-fluid" alt="Producto02">
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-6 px-1 py-1">
-                  <img src="./images/foto02.jpeg" class="img-fluid" alt="Producto02">
-                </div>
-                <div class="col-6 px-1 py-1">
-                  <img src="./images/foto02.jpeg" class="img-fluid" alt="Producto02">
-                </div>
-              </div>
-            
-          </div>
-
-
-
-        </div>
-      </section>
-
-
-      <section id="contacto" class="grapper">
-        <div class="container">
-          <div class="row px-5 py-5 text-center">
-            <p>¿Quieres más información?</p>
-          </div>
+        <div class="col-12 col-md py-5">
           <div class="row">
-            <div class="d-grid col-6 mx-auto">
-              <button class="btn btn-primary" type="button">¡Hablemos!</button>
+            <div class="col-6 px-1 py-1">
+              <figure>
+                <img src="./img/p01.jpg" class="img-fluid" alt="Producto 01">
+              </figure>
             </div>
+            <div class="col-6 px-1 py-1">
+              <figure>
+                <img src="./img/p02.jpg" class="img-fluid" alt="Producto 02">
+              </figure>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-6 px-1 py-1">
+              <figure>
+                <img src="./img/p03.jpg" class="img-fluid" alt="Producto 03">
+              </figure>
+            </div>
+            <div class="col-6 px-1 py-1">
+              <figure>
+                <img src="./img/p04.jpg" class="img-fluid" alt="Producto 04">
+              </figure>
+            </div>
+
+          </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section id="contacto">
+      <div class="container">
+        <div class="row px-5 py-5 text-center">
+          <div class="col-12 col-md-7 mx-auto">
+            <h3>¿Quieres más información?</h3>
+          </div>
+          <div class="d-grid col-12 col-md-7 mx-auto">
+            <a class="btn" href="./formulario.html">
+              ¡Hablemos!</a>
+
           </div>
         </div>
-      
-      </section>
-
-    </main>
 
 
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="row py-5 text-center">
+        <div class="col-12">
+          <ul class="list-group list-group-horizontal-md justify-content-md-center">
+            <li class="list-group-item">Manuel Alfaro</li>
+            <li class="list-group-item">Javiera Córdova</li>
+            <li class="list-group-item">Valentina Roco</li>
+            <li class="list-group-item">Gabriela Soto</li>
+          </ul>
+        </div>
+        <div class="col-12">
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
