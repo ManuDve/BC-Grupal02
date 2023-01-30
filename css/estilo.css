@@ -190,6 +190,12 @@ main h2 {
     border-bottom: 2px solid var(--green);
 }
 
+#calificacion input[type="text" i]::placeholder{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
 #calificacion input[type="text" i]:focus-visible {
     outline: none;
 }
