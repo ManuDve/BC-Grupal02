@@ -165,7 +165,7 @@ footer {
     font-weight: 200;
 }
 
-.year {
+#year {
     margin-top: 2em;
     color: var(--green);
     font-weight: 700;
