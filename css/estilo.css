@@ -157,10 +157,8 @@ main h2 {
 }
 
 /* Calificación */
-#calificacion {
-    background-color: rgba(0, 175, 145, 0.5);
-    text-transform: uppercase;
-}
+
+
 
 #calificacion h3 {
     font-size: 1.5rem;
@@ -168,33 +166,47 @@ main h2 {
     margin: 1em 0;
 }
 
-#nota{
-    width: 30%;
-    height: 8vh;
-    border-radius: 10px;
-}
 
 #calificacion button {
+    text-transform: uppercase;
     font-size: 120%;
-    border: 2px solid var(--green);
-    color: var(--green);
+    border: none;
+    color: white;
     margin: 1em;
     padding: 1em;
     font-weight: 600;
     letter-spacing: 1px;
+    border-radius: 0.375em;
+    background: var(--green);
+}
+
+#calificacion input[type="text" i]{
+    padding: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid var(--green);
+}
+
+#calificacion input[type="text" i]:focus-visible {
+    outline: none;
 }
 
 #result {
     font-size: 120%;
-    color: black;
-    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
     margin: 1em;
 }
 
 #numresult {
     font-size: 120%;    
-    color: black;
-    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
 }
 
 
