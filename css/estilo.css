@@ -156,6 +156,48 @@ main h2 {
     letter-spacing: 1px;
 }
 
+/* Calificación */
+#calificacion {
+    background-color: rgba(0, 175, 145, 0.5);
+    text-transform: uppercase;
+}
+
+#calificacion h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+#nota{
+    width: 30%;
+    height: 8vh;
+    border-radius: 10px;
+}
+
+#calificacion button {
+    font-size: 120%;
+    border: 2px solid var(--green);
+    color: var(--green);
+    margin: 1em;
+    padding: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#result {
+    font-size: 120%;
+    color: black;
+    font-weight: 500;
+    margin: 1em;
+}
+
+#numresult {
+    font-size: 120%;    
+    color: black;
+    font-weight: 500;
+}
+
+
 /* Footer */
 
 footer {
