@@ -2,7 +2,7 @@
 
 :root {
     --green: rgb(0, 173, 145);
-  }
+}
 
 /* Header */
 
@@ -111,6 +111,7 @@ main h2 {
     background-color: rgba(0, 175, 145, 0.1);
 }
 
+
 /* Catálogo */
 
 #catalogo figure {
@@ -156,9 +157,12 @@ main h2 {
     letter-spacing: 1px;
 }
 
+#contacto a:hover{
+    background-color: var(--green);
+    color: #ffff;
+}
+
 /* Calificación */
-
-
 
 #calificacion h3 {
     font-size: 1.5rem;
@@ -178,7 +182,15 @@ main h2 {
     letter-spacing: 1px;
     border-radius: 0.375em;
     background: var(--green);
+    border: 2px solid var(--green);
+
 }
+
+#calificacion button:hover {
+    background-color: rgba(0, 175, 145, 0.1);
+    color: var(--green);
+}
+
 
 #calificacion input[type="text" i]{
     padding: 0.5em;

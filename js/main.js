@@ -43,10 +43,10 @@ function calificar(){
     }
     
     if (num >= 0 && num <= 10) { // Condicional para el texto
-        document.getElementById("result").innerText= "Nuestro servicio está: " + text;
-        document.getElementById("numresult").innerText = "Tu calificación fue de: " + num;
+        document.querySelector(".result").textContent= "Nuestro servicio está: " + text;
+        document.querySelector(".numresult").textContent = "Tu calificación fue de: " + num;
     } else { // Elimina el resultado anterior si se ingresa un número fuera del rango o algo que no sea un número
-        document.getElementById("numresult").innerText = "";
-        document.getElementById("result").innerText= "Ingrese un número válido";
+        document.querySelector(".numresult").textContent = "";
+        document.querySelector(".result").textContent= "Ingrese un número válido";
     }
 }
