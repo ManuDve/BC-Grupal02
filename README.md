@@ -4,9 +4,9 @@ Trabajo grupal de la tienda Cachureando, siguiendo los requerimientos semanales 
 
 # Requerimientos
 
-v2.1 Implementación de JS Vanilla
-v2.0 Implementación de Bootstrap 5 
-v1.0 [Puede ser revisada aquí](https://github.com/ManuDve/BC-Grupal01)
+* v2.1 Implementación de JS Vanilla
+* v2.0 Implementación de Bootstrap 5 
+* v1.0 [Puede ser revisada aquí](https://github.com/ManuDve/BC-Grupal01)
 
 # Github Pages
 
