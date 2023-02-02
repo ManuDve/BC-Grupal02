@@ -162,13 +162,13 @@
             <h3>Del 1 al 10 ¿Cómo evalúas nuestro servicio?</h3>
           </div>
           <div class="row"> 
-            <div class="col-6 mx-auto">
+            <div class="col-12 col-md-6 col-xl-4 mx-auto">
                 <form id="inputrange">
-                  <div data-role="rangeslider" data-theme="b">
-              
-                    <input type="range" name="gfg"
+                  <div id="rangeslider" data-role="rangeslider">
+                    <input type="range"
                       id="nota" min="0" max="10"
-                      value="30">
+                      value="10"  oninput="this.nextElementSibling.value = this.value">
+                      <output>10</output>
                   </div>
                 </form>    
             </div>
@@ -214,8 +214,7 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
      <!-- Link JS jQuery -->
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"> </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
 </body>
 
 </html>
