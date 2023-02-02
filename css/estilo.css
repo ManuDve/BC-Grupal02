@@ -84,12 +84,6 @@ main h2::after {
 }
 
 
-@media screen and (min-width: 1200px) { 
-
-    #catalogo h2::after { /* corre la linea en XL hacia start*/
-        margin: 0;
-    }
-}
 
 
 
@@ -317,12 +311,26 @@ footer ul .list-group-item {
   .scrolled.slide-right {
     animation: slide-in-right 1.5s ease-in-out both;
   }
-
+  .scrolled.slide-left {
+    animation: slide-in-left 1.5s ease-in-out both;
+  }
   
   @keyframes slide-in-right {
     0% {
       -webkit-transform: translateX(100px);
       transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
       opacity: 0;
     }
     100% {
@@ -353,3 +361,24 @@ footer ul .list-group-item {
       opacity: 1;
     }
   }
+
+/* Borrar animación para texto catálogo */
+  
+@media screen and (min-width: 1200px) { 
+
+    #catalogo h2::after { /* corre la linea en XL hacia start*/
+        margin: 0;
+    }
+    @keyframes slide-in-left {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+        }
+    }
+}
