@@ -15,6 +15,6 @@ Link para visitar: [https://manudve.github.io/BC-Grupal02](https://manudve.githu
 
 # Equipo de Trabajo ✨
 
-<a href="https://github.com/ManuDve/BC-Grupal02/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ManuDve/BC-Grupal02" />
+<a href="https://github.com/manuDve/BC-Grupal02/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=manuDve/BC-Grupal02" />
 </a>
