@@ -13,8 +13,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <link rel="manifest" href="./img/favicon/site.webmanifest">
   <script src="./js/main.js" defer></script>
-  <!-- Link CSS jQuery -->
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
 </head>
 
 <body>
@@ -164,7 +163,7 @@
           </div>
           <div class="row"> 
             <div class="col-6 mx-auto">
-                <form>
+                <form id="inputrange">
                   <div data-role="rangeslider" data-theme="b">
               
                     <input type="range" name="gfg"
@@ -179,12 +178,12 @@
           <div class="col-12 col-md-7 mx-auto">
             <input type="text" id="nota" placeholder="Ingrese una calificación">
           </div> -->
-          <div class="d-grid col-12 col-md-7 mx-auto">
-            <button onclick= "calificar()">ENVIAR</button>
+            <div class="d-grid col-12 col-md-7 mx-auto">
+              <button onclick= "calificar()">ENVIAR</button>
+              </div>
+              <div class="result d-grid col-12 col-md-7 mx-auto" id="result">  </div>
+              <div class="numresult d-grid col-12 col-md-7 mx-auto" id="numresult">  </div>
           </div>
-          <div class="result d-grid col-12 col-md-7 mx-auto" id="result">  </div>
-          <div class="numresult d-grid col-12 col-md-7 mx-auto" id="numresult">  </div>
-        </div>
       </div>
     </section>
 

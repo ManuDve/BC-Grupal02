@@ -2,6 +2,7 @@
 
 :root {
     --green: rgb(0, 173, 145);
+    --dark: #3f3f3f;
 }
 
 /* Header */
@@ -244,7 +245,7 @@ footer {
 }
 
 footer ul .list-group-item {
-    background-color: #3f3f3f;
+    background-color: var(--dark);
     border: 0;
     color: white;
 }
@@ -270,4 +271,86 @@ footer ul .list-group-item {
 
 #mapa iframe {
     margin-top: 2em;
+}
+
+/* Estilos JQuery Range Slider */
+
+
+#inputrange .ui-rangeslider .ui-rangeslider-sliders {
+    position: relative;
+    overflow: visible;
+    margin: 0;
+}
+
+#inputrange .ui-rangeslider .ui-rangeslider-sliders .ui-slider-track:first-child {
+    height: 15px;
+    border-width: 1px;
+}
+
+#inputrange .ui-rangeslider .ui-rangeslider-sliders .ui-slider-track {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+.ui-page-theme-a .ui-bar-inherit {
+    background: rgba(0, 173, 145, 0.5);
+}
+
+#inputrange .ui-slider-track.ui-corner-all {
+    border-radius: 0.3125em;
+}
+
+/* Rango Handler */
+
+#inputrange .ui-btn.ui-btn-b {
+    background-color: #333;
+    border-color: #1f1f1f;
+    color: #fff;
+    text-shadow: 0 1px 0 #111;
+}
+
+#inputrange .ui-slider-track .ui-btn.ui-slider-handle {
+    position: absolute;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    margin: -15px 0 0 -15px;
+    outline: 0;
+    padding: 0;
+    border-radius: 100%;
+}
+
+/* Handler Numerico */
+
+#inputrange .ui-rangeslider .ui-slider-input.ui-rangeslider-last {
+    float: right;
+}
+
+#inputrange .ui-body-b {
+    border: none;
+    color: var(--dark);
+}
+
+#inputrange input.ui-slider-input {
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 -70px 0 0;
+    padding: 4px;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid var(--green);
+    outline: 0;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
