@@ -83,8 +83,12 @@ main h2::after {
     }
 }
 
+@media screen and (min-width: 1200px) { 
 
-
+    #catalogo h2::after { /* corre la linea en XL hacia start*/
+        margin: 0;
+    }
+}
 
 
 
@@ -362,13 +366,10 @@ footer ul .list-group-item {
     }
   }
 
-/* Borrar animación para texto catálogo */
+/*Animación restringida para desktop */
   
 @media screen and (min-width: 1200px) { 
 
-    #catalogo h2::after { /* corre la linea en XL hacia start*/
-        margin: 0;
-    }
     @keyframes slide-in-left {
         0% {
           -webkit-transform: translateX(0);
