@@ -292,3 +292,64 @@ footer ul .list-group-item {
     font-weight: 700;
     color: var(--dark);
 }
+
+
+/* Animaciones con JS */
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+  
+  .scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+  }
+  
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+  }
+  
+  
+  .scrolled.slide-right {
+    animation: slide-in-right 1.5s ease-in-out both;
+  }
+
+  
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
