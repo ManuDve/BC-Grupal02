@@ -1,3 +1,15 @@
+// Funcion de Jquery para boton back to top
+
+$(document).ready(function () {
+  jQuery.goup({
+    hideUnderWidth: 0,
+    containerColor:'#00ad91',
+    goupSpeed:'fast',
+  });
+});
+
+// Funcion del tiempo con intervalos de 1000ms
+
 setInterval(() =>{
     
 let fecha = document.querySelector('#year');
@@ -14,6 +26,8 @@ fecha.textContent = fechaActual;
 
 
 }, 1000)
+
+// Funcion para calificar
 
 function calificar(){
     let num = parseInt(document.getElementById("nota").value);
