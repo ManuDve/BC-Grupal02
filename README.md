@@ -4,6 +4,7 @@ Trabajo grupal de la tienda Cachureando, siguiendo los requerimientos semanales 
 
 # Requerimientos
 
+* v2.4 Implementación de JQuery para botón back to top
 * v2.3 Implementación de efectos visuales con JS Vanilla y CSS
 * v2.2 Obligados a implementar JQuery (Se removera eventualmente)
 * v2.1 Implementación de JS Vanilla
